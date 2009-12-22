@@ -5,6 +5,7 @@ all_from 'lib/Plack/Middleware/ReverseProxy.pm';
 # requires '';
 requires 'parent';
 requires 'Plack::Middleware';
+requires 'Plack::Request';
 
 tests 't/*.t';
 author_tests 'xt';

@@ -22,8 +22,10 @@ no_index:
 requires:
   Filter::Util::Call: 0
   Plack::Middleware: 0
+  Plack::Request: 0
   parent: 0
+  perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/lopnor/Plack-Middleware-ReverseProxy.git
-version: 0.02
+version: 0.03
