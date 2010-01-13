@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use 5.008_001;
 use parent qw(Plack::Middleware);
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub call {
     my $self = shift;
@@ -33,6 +33,8 @@ sub call {
             # in apache httpd.conf (RequestHeader set X-Forwarded-Port 8443)
             $env->{SERVER_PORT} = $env->{HTTP_X_FORWARDED_PORT};
             $host .= ":$env->{SERVER_PORT}";
+            $env->{'psgi.url_scheme'} = 'https'
+                if $env->{SERVER_PORT} == 443;
         } else {
             $env->{SERVER_PORT} = $default_port;
         }
