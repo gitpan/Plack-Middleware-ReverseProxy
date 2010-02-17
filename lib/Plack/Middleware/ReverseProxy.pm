@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use 5.008_001;
 use parent qw(Plack::Middleware);
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 sub call {
     my $self = shift;
@@ -66,7 +66,7 @@ Plack::Middleware::ReverseProxy - Supports app to run as a reverse proxy backend
 
   builder {
       enable_if { $_[0]->{REMOTE_ADDR} eq '127.0.0.1' } 
-          "Plack::Middleware::ReverseProxy"
+          "Plack::Middleware::ReverseProxy";
       $app;
   };
 
