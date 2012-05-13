@@ -3,13 +3,14 @@ abstract: 'Supports app to run as a reverse proxy backend'
 author:
   - 'This module is originally written by Kazuhiro Osawa as L<HTTP::Engine::Middleware::ReverseProxy> for L<HTTP::Engine>.'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
   Test::Base: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,4 +30,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/lopnor/Plack-Middleware-ReverseProxy.git
-version: 0.11
+version: 0.12
