@@ -22,6 +22,7 @@ no_index:
     - t
     - xt
 requires:
+  Plack: 0.9988
   Plack::Middleware: 0
   Plack::Request: 0
   YAML: 0
@@ -30,4 +31,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/lopnor/Plack-Middleware-ReverseProxy.git
-version: 0.13
+version: 0.14
