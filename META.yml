@@ -4,7 +4,6 @@ author:
   - 'This module is originally written by Kazuhiro Osawa as L<HTTP::Engine::Middleware::ReverseProxy> for L<HTTP::Engine>.'
 build_requires:
   ExtUtils::MakeMaker: 6.59
-  Test::Base: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.59
@@ -25,10 +24,9 @@ requires:
   Plack: 0.9988
   Plack::Middleware: 0
   Plack::Request: 0
-  YAML: 0
   parent: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/lopnor/Plack-Middleware-ReverseProxy.git
-version: 0.14
+version: 0.15
